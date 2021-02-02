@@ -7,11 +7,8 @@ public class PClass {
 
         ArrayList<Integer> numbers = new ArrayList<Integer>();
 
-        int i = 0;
-
         for (String retval : start.split(",")) {
             numbers.add(Integer.parseInt(retval));
-            i++;
         }
         al.add(numbers);
 
@@ -23,10 +20,6 @@ public class PClass {
     public void compile(ArrayList<Integer> numbers, ArrayList<ArrayList<Integer>> al) {
         Integer recursecount = numbers.size() - 1;
         second(numbers, recursecount, al);
-        for (int i = 0; i < numbers.size(); i++) {
-
-        }
-
     }
 
     public void second(ArrayList<Integer> numbers, Integer recursecount, ArrayList<ArrayList<Integer>> al) {
